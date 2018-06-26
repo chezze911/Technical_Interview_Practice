@@ -16,5 +16,7 @@ how to run:
 1.  Clone the repository on your local machine
     git clone https://github.com/chezze911/Technical_Interview_Practice
 2.  Open one of the .py files, (example: question1.py) in your favorite text editor
-3.  Run the program (shortcut: command + B) to see the output
+3.  Run the program 
+    Ex:  In Sublime Text, run (shortcut: command + B) to see the output
+   
 
