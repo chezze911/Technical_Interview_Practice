@@ -1,0 +1,20 @@
+'''Question 1
+Given two strings s and t, determine whether some anagram of t is a substring of s. 
+For example: if s = "udacity" and t = "ad", then the function returns True. 
+Your function definition should look like: question1(s, t) and return a boolean True or False.'''
+
+The implementation for this solutions depends on the definition of anagram. I interpreted it as a rearrangement of the letters of the t string in any order (including the original arrangement). The arrangement does not have to be continuous. For example ‘456789’ would be considered to contain a substring of ‘687’. For my solution the only data structures used are the two string inputs. For every character on the s string, I remove it in the s string and in the t string if it occurs. If at the end the t string is not empty there was at least one character that was not in s, meaning that s can not contain a substring that is an anagram of t. If t is empty then s did contain a substring that was an anagram of t. 
+
+This implementation does a number of computations for every element of s. This means that the runtime is roughly O(n) where n is the number of elements in string s. The space complexity will only be the two strings, so it will be constant O(1).
+
+
+'''
+Question 2
+Given a string a, find the longest palindromic substring contained in a. Your function
+definition should look like question2(a), and return a string.
+'''
+
+For this question we consider all of the substrings of s, starting from the largest one (the complete s string itself). We then consider the string minus the last character and then minus the last two and so on. After we only consider the first character , we then consider all the substrings starting from the second character and proceed as before. If a substring is the largest one we have encountered we keep track of it. 
+
+
+This implementation runs through all the elements of the string n times, where n is the length of the string. Therefore the runtime can be simplified to O(n^2). Since we only consider the current substring the space complexity is a constant O(1).
