@@ -5,3 +5,33 @@ Your function definition should look like: question1(s, t) and return a boolean 
 
 def question1(s,t):
 
+	for character in t:
+        	if character in s:
+            		s = s.replace(character, "", 1)
+            		t = t.replace(character, "", 1)
+	if not t:
+    		return True
+	return False
+
+print question1("udacity", "ad")
+# True 
+
+print question1("u d", " ")
+# True
+
+print question1("udacity", "udacious")
+# False 
+
+print question1("racecar", "car")
+# True 
+
+print question1("12345567890", "0")
+# True
+
+print question1("!@#$%^&*", "$#")
+# True
+
+print question1("nanodegree", "")
+# True
+
+#[Finished in 0.1s]
