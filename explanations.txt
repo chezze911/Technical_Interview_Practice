@@ -18,3 +18,15 @@ For this question we consider all of the substrings of s, starting from the larg
 
 
 This implementation runs through all the elements of the string n times, where n is the length of the string. Therefore the runtime can be simplified to O(n^2). Since we only consider the current substring the space complexity is a constant O(1).
+
+
+'''Question 3
+Given an undirected graph G, find the minimum spanning tree within G. A minimum spanning tree connects all vertices in a graph with the smallest possible total weight of edges. Your function should take in and return an adjacency list structured like this:
+
+{'A': [('B', 2)],
+ 'B': [('A', 2), ('C', 5)], 
+ 'C': [('B', 5)]}
+
+Vertices are represented as unique strings. The function definition should be question3(G)'''
+
+

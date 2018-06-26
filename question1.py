@@ -13,25 +13,30 @@ def question1(s,t):
     		return True
 	return False
 
-print question1("udacity", "ad")
-# True 
 
-print question1("u d", " ")
-# True
+def test1():
+	print question1("udacity", "ad")
+	# True 
 
-print question1("udacity", "udacious")
-# False 
+	print question1("u d", " ")
+	# True
 
-print question1("racecar", "car")
-# True 
+	print question1("udacity", "udacious")
+	# False 
 
-print question1("12345567890", "0")
-# True
+	print question1("racecar", "car")
+	# True 
 
-print question1("!@#$%^&*", "$#")
-# True
+	print question1("12345567890", "0")
+	# True
 
-print question1("nanodegree", "")
-# True
+	print question1("!@#$%^&*", "$#")
+	# True
 
-#[Finished in 0.1s]
+	print question1("nanodegree", "")
+	# True
+
+	#[Finished in 0.1s]
+
+if __name__ == '__main__':
+    test1()
